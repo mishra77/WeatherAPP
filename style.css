@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #232526, #414345);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Container */
+.container {
+  width: 90vw;
+  max-width: 42rem;
+  transition: transform 0.3s ease;
+}
+
+/* Card */
+.card {
+  background: rgba(68, 68, 68, 0.9);
+  border-radius: 1.8rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2rem 3.5rem rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.8);
+}
+
+.card header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  color: #ffcc70;
+}
+
+/* Weather Info */
+.weather-info h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.weather-info img {
+  width: 7rem;
+  height: 7rem;
+  margin: 1.5rem 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+.weather-info p {
+  font-size: 1.2rem;
+  margin: 0.4rem 0;
+}
+
+/* Input */
+input[type="text"] {
+  padding: 0.8rem 1.2rem;
+  width: 70%;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Button */
+button {
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #e68900, #e64a19);
+  transform: scale(1.05);
+}
+
+/* Small Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
